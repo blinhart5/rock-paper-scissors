@@ -48,13 +48,16 @@ function playRound(playerSelection, computerSelection) {
 
 
 
-const playerInput = "paper";
+
+const playerInput = window.prompt("Rock, Paper, or Scissors?");
    
 const playerSelection = playerInput.toLowerCase();
 const computerSelection = computerPlay(); 
 
 console.log(playRound(playerSelection, computerSelection));
 console.log(playerScore, compScore);
+console.log(playerSelection,"/", computerSelection);
+
 
 
 
